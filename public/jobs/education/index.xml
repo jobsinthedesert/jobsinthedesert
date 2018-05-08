@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Jobs in the Desert</title>
+    <link>https://jobsinthedesert.github.io/jobs/education/</link>
+    <description>Recent content in Education on Jobs in the Desert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 May 2018 23:26:13 -0700</lastBuildDate>
+    
+	<atom:link href="https://jobsinthedesert.github.io/jobs/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Xavier College Prep</title>
+      <link>https://jobsinthedesert.github.io/jobs/education/xavier_college_prep/</link>
+      <pubDate>Sun, 06 May 2018 23:31:51 -0700</pubDate>
+      
+      <guid>https://jobsinthedesert.github.io/jobs/education/xavier_college_prep/</guid>
+      <description>Site
+Careers</description>
+    </item>
+    
+    <item>
+      <title>College of the Desert</title>
+      <link>https://jobsinthedesert.github.io/jobs/education/college_of_the_desert/</link>
+      <pubDate>Sun, 06 May 2018 23:31:37 -0700</pubDate>
+      
+      <guid>https://jobsinthedesert.github.io/jobs/education/college_of_the_desert/</guid>
+      <description>Site
+Careers</description>
+    </item>
+    
+    <item>
+      <title>Palm Springs Unified School District</title>
+      <link>https://jobsinthedesert.github.io/jobs/education/palm_springs_usd/</link>
+      <pubDate>Sun, 06 May 2018 23:31:19 -0700</pubDate>
+      
+      <guid>https://jobsinthedesert.github.io/jobs/education/palm_springs_usd/</guid>
+      <description>Site
+Careers</description>
+    </item>
+    
+    <item>
+      <title>Desert Sands Unified School District</title>
+      <link>https://jobsinthedesert.github.io/jobs/education/desert_sands_usd/</link>
+      <pubDate>Sun, 06 May 2018 23:30:56 -0700</pubDate>
+      
+      <guid>https://jobsinthedesert.github.io/jobs/education/desert_sands_usd/</guid>
+      <description>Site
+Careers</description>
+    </item>
+    
+    <item>
+      <title>Coachella Valley Unified School District</title>
+      <link>https://jobsinthedesert.github.io/jobs/education/coachella_valley_usd/</link>
+      <pubDate>Sun, 06 May 2018 23:30:36 -0700</pubDate>
+      
+      <guid>https://jobsinthedesert.github.io/jobs/education/coachella_valley_usd/</guid>
+      <description>Site
+Careers</description>
+    </item>
+    
+  </channel>
+</rss>
