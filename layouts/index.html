@@ -9,12 +9,7 @@
   {{partial "header" .}}
   {{partial "nav" .}}
 
-  <section id="categories">
-  {{$jobs := .Site.GetPage "section" "jobs"}}
-  {{range $jobs.Sections.ByTitle}}
-  <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
-  {{end}}
-  </section>
+  {{partial "categories" .}}
 
   {{partial "footer" .}}
 </body>

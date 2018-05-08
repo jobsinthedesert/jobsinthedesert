@@ -1,4 +1,3 @@
 baseURL = "https://jobsinthedesert.github.io/"
 languageCode = "en-us"
 title = "Jobs in the Desert"
-publishDir = "docs"
