@@ -1,0 +1,13 @@
+{
+  "name": "jobs-in-the-desert",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "scripts": {
+	"sass": "node-sass -o static/css src/scss -w --output-style=compressed"
+  }
+}

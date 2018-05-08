@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jobs in the Desert</title>
+  <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/main.css">
+</head>
+<body>
+  {{partial "header" .}}
+  {{partial "nav" .}}
+
+  <section id="categories">
+  {{$jobs := .Site.GetPage "section" "jobs"}}
+  {{range $jobs.Sections.ByTitle}}
+  <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+  {{end}}
+  </section>
+
+  {{partial "footer" .}}
+</body>
+</html>

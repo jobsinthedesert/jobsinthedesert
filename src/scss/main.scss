@@ -1,0 +1,19 @@
+@import 'header';
+@import 'nav';
+@import 'posts';
+@import 'categories';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+footer {
+  padding: 20px 0px 20px 0px;
+  background-color: #aee571;
+  text-align: center;
+}

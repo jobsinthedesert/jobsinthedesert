@@ -1,0 +1,44 @@
+#categories {
+  max-width: 100%;
+  margin: 50px auto 50px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+
+  h2 {
+    background-color: #b2417b;
+	height: 20vh;
+	line-height: 20vh;
+  }
+
+  h2:hover {
+    background-color: #7bb241;
+  }
+
+  a {
+    display: block;
+    text-decoration:none;
+	color:#000;
+  }
+}
+
+@media screen and (min-width:420px) {
+  #categories {
+    max-width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width:640px) {
+  #categories {
+    max-width: 95%;
+	grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width:768px) {
+  #categories {
+    max-width: 60%;
+  }
+}
