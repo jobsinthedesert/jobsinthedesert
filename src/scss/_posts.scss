@@ -12,6 +12,17 @@
         color: #000;
       }
     }
+
+	img {
+	  display: block;
+      max-width: 100%;	
+	  height: auto;
+	  margin: 10px auto 10px auto;
+	}
+
+	pre {
+      overflow: scroll;
+    }
   }
 
   .job {
@@ -52,7 +63,7 @@
         background-color: #7bb241;
       }
 
-      p:nth-child(n+3) {
+      p:nth-child(n+3), h3 {
         grid-column-start: 1;
         grid-column-end: span 3;
       }
