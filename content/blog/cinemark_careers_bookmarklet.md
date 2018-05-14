@@ -1,7 +1,6 @@
 ---
 title: "Cinemark Careers Bookmarklet"
 date: 2018-05-13T19:49:14-07:00
-draft: true
 ---
 
 Cinemark has two locations in the valley.  The quickest way of searching for job opportunities at La Quinta and the River is to enter a zip code.  Here are the zip codes that will be used:
