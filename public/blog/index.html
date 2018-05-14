@@ -23,6 +23,55 @@
   <section id="posts">
     
     <article class="post">
+      <h2><a href="https://jobsinthedesert.github.io/blog/cinemark_careers_bookmarklet/">Cinemark Careers Bookmarklet</a></h2>
+	  <div class="content"><p>Cinemark has two locations in the valley.  The quickest way of searching for job opportunities at La Quinta and the River is to enter a zip code.  Here are the zip codes that will be used:</p>
+
+<p>&nbsp;</p>
+
+<ul>
+<li>La Quinta: 92253</li>
+<li>Rancho Mirage: 92270</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><img src="/img/cinemark_careers.PNG" alt="Cinemark Careers Search" /></p>
+
+<p>Scrolling down to the career search area of the page, there is a form with an input element to enter the zip code and a button to click to search along with a few select elements that are not relevant.  The input element has an id of &ldquo;keyword&rdquo; and the value inside of it can be changed like so:</p>
+
+<p>&nbsp;</p>
+
+<pre><code>document.getElementById('keyword').value=92270;
+</code></pre>
+
+<p>&nbsp;</p>
+
+<p>The submit button does not have an id and running the .submit() function on the form element does not work in this scenario because when a user clicks the button, the job search results are displayed on the page instead of refreshing the page with the results of the query.  To get around this, the button can be targeted using the document.forms[].elements[].click() method which would result in:</p>
+
+<p>&nbsp;</p>
+
+<pre><code>document.forms[0].elements[7].click();
+</code></pre>
+
+<p>&nbsp;</p>
+
+<p>Put these two lines of code together and the template for the bookmarklet is formed.  After changing the zip code, the end result is two bookmarklets that will save a few keystrokes.</p>
+
+<p>&nbsp;</p>
+
+<script src="//gist.github.com/jobsinthedesert/8cf714590549ffee6bd3a10e218cedc8.js"></script>
+
+<p>&nbsp;</p>
+
+<p><a href="javascript:(function(){document.getElementById('keyword').value=92253;document.forms[0].elements[7].click();})();">Cinemark Careers at La Quinta, 92253 Bookmarklet</a></p>
+
+<p>&nbsp;</p>
+
+<p><a href="javascript:(function(){document.getElementById('keyword').value=92270;document.forms[0].elements[7].click();})();">Cinemark Careers at The River, 92270 Bookmarklet</a></p>
+</div>
+	</article> <hr>
+    
+    <article class="post">
       <h2><a href="https://jobsinthedesert.github.io/blog/mathis_brothers_bookmarklet/">Mathis Brothers Furniture Careers Bookmarklet</a></h2>
 	  <div class="content"><p>There are plenty of ways to sort through the job opportunities at Mathis Brothers Furniture.  At the time of writing this post, there are not many positions available in the valley.  In fact, it makes me wonder if having this many job filters for furniture stores is overkill.  There are 27 degree filters and an even greater number of job categories.  I am tempted to create a job alert to see if there are any biotech or pharmaceutical job opportunities in the future.</p>
 

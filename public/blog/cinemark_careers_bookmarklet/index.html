@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Cinemark Careers Bookmarklet | Jobs in the Desert</title>
+  <link rel="stylesheet" type="text/css" href="https://jobsinthedesert.github.io/css/main.css">
+</head>
+<body>
+  <header>
+  <h1>Jobs in the Desert</h1> <hr>
+  <div id="tagline">A growing list of employment opportunities in the Coachella Valley</div>
+</header>
+  <nav>
+  <ul>
+	<li><a href="https://jobsinthedesert.github.io/">Home</a></li>
+	<li><a href="https://jobsinthedesert.github.io/blog">Updates</a></li>
+	<li><a href="https://github.com/jobsinthedesert/jobsinthedesert">Contribute</a></li>
+  </ul>
+</nav>
+
+  <section id="posts">
+    <article class="post">
+      <h2><a href="https://jobsinthedesert.github.io/blog/cinemark_careers_bookmarklet/">Cinemark Careers Bookmarklet</a></h2>
+	  <div class="content"><p>Cinemark has two locations in the valley.  The quickest way of searching for job opportunities at La Quinta and the River is to enter a zip code.  Here are the zip codes that will be used:</p>
+
+<p>&nbsp;</p>
+
+<ul>
+<li>La Quinta: 92253</li>
+<li>Rancho Mirage: 92270</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><img src="/img/cinemark_careers.PNG" alt="Cinemark Careers Search" /></p>
+
+<p>Scrolling down to the career search area of the page, there is a form with an input element to enter the zip code and a button to click to search along with a few select elements that are not relevant.  The input element has an id of &ldquo;keyword&rdquo; and the value inside of it can be changed like so:</p>
+
+<p>&nbsp;</p>
+
+<pre><code>document.getElementById('keyword').value=92270;
+</code></pre>
+
+<p>&nbsp;</p>
+
+<p>The submit button does not have an id and running the .submit() function on the form element does not work in this scenario because when a user clicks the button, the job search results are displayed on the page instead of refreshing the page with the results of the query.  To get around this, the button can be targeted using the document.forms[].elements[].click() method which would result in:</p>
+
+<p>&nbsp;</p>
+
+<pre><code>document.forms[0].elements[7].click();
+</code></pre>
+
+<p>&nbsp;</p>
+
+<p>Put these two lines of code together and the template for the bookmarklet is formed.  After changing the zip code, the end result is two bookmarklets that will save a few keystrokes.</p>
+
+<p>&nbsp;</p>
+
+<script src="//gist.github.com/jobsinthedesert/8cf714590549ffee6bd3a10e218cedc8.js"></script>
+
+<p>&nbsp;</p>
+
+<p><a href="javascript:(function(){document.getElementById('keyword').value=92253;document.forms[0].elements[7].click();})();">Cinemark Careers at La Quinta, 92253 Bookmarklet</a></p>
+
+<p>&nbsp;</p>
+
+<p><a href="javascript:(function(){document.getElementById('keyword').value=92270;document.forms[0].elements[7].click();})();">Cinemark Careers at The River, 92270 Bookmarklet</a></p>
+</div>
+	</article>
+  </section>
+  <footer>
+  Want to contribute to the site?  Submit a pull request on the <a href="https://github.com/jobsinthedesert/jobsinthedesert">GitHub repo</a> <br>
+  Or send an email over to <a href="mailto:jobsinthedesert@gmail.com">jobsinthedesert@gmail.com</a>
+</footer>
+
+</body>
+</html>
