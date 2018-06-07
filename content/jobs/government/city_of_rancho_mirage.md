@@ -1,7 +1,6 @@
 ---
 title: "City of Rancho Mirage"
 date: 2018-05-07T16:04:27-07:00
-draft: true
 ---
 
 [Site]
