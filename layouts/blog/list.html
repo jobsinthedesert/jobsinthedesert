@@ -11,7 +11,7 @@
   {{partial "nav" .}}
 
   <section id="posts">
-    {{ range .Pages.ByTitle }}
+    {{ range .Pages.ByPublishDate.Reverse }}
     <article class="post">
       <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
 	  <div class="content">{{.Content}}</div>

@@ -13,6 +13,24 @@
       }
     }
 
+    p {
+      display: block;
+      margin: 0em 0em 1em 0em;
+    }
+
+    ins, del {
+      display: block;
+      text-decoration: none;
+    }
+
+    ins {
+      color: green;
+    }
+
+    del {
+      color: #F92672;
+    }
+
 	img {
 	  display: block;
       max-width: 100%;	
